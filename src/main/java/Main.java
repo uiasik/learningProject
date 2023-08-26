@@ -1,14 +1,13 @@
 package main.java;
 
-import main.java.patterns.singleton.StartSingleton;
-import main.java.patterns.state.StartState;
-import main.java.reflection.StartReflection;
+
+import main.java.patterns.abstractFactory.StartAbstractFactory;
 
 public class Main
 {
     public static void main( String[] args )
     {
-       Start start = new StartReflection();
+       main.java.Start start = new StartAbstractFactory();
        start.start();
     }
 }
